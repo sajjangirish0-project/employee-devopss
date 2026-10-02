@@ -20,6 +20,8 @@ pipeline {
         stage('Check Tools') {
             steps {
                 sh '''
+                    export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
                     echo "PATH=$PATH"
 
                     echo "Docker:"
@@ -30,7 +32,7 @@ pipeline {
                     which kubectl
                     kubectl version --client
 
-                    echo "Kubernetes nodes:"
+                    echo "Kubernetes:"
                     kubectl get nodes
                 '''
             }
