@@ -17,6 +17,24 @@ pipeline {
 
             }
         }
+        stage('Check Tools') {
+            steps {
+                sh '''
+                    echo "PATH=$PATH"
+
+                    echo "Docker:"
+                    which docker
+                    docker --version
+
+                    echo "Kubectl:"
+                    which kubectl
+                    kubectl version --client
+
+                    echo "Kubernetes nodes:"
+                    kubectl get nodes
+                '''
+            }
+        }
 
         stage('Test') {
 
