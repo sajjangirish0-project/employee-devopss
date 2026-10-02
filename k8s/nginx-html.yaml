@@ -1,0 +1,52 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: nginx-html
+
+data:
+
+  index.html: |
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+        <title>Employee Management</title>
+
+        <style>
+
+            body {
+                font-family: Arial;
+                margin: 50px;
+            }
+
+            .box {
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="box">
+
+            <h1>Employee Management Application</h1>
+
+            <p>Frontend: Nginx</p>
+
+            <p>Backend: Flask</p>
+
+            <p>Platform: Kubernetes</p>
+
+        </div>
+
+    </body>
+
+    </html>
