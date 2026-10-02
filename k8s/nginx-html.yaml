@@ -39,11 +39,11 @@ data:
 
             <h1>Employee Management Application</h1>
 
-            <p>Frontend: Nginx</p>
+            <p>Employee Name: Girish Sajjanar</p>
 
-            <p>Backend: Flask</p>
+            <p>Company: Pulicis sapeint</p>
 
-            <p>Platform: Kubernetes</p>
+            <p>Role: Devops Engineer</p>
 
         </div>
 
